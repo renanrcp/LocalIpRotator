@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{254B1629-D037-4129-8EED-4D0F17DB5C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalIpRotator", "src\LocalIpRotator\LocalIpRotator.csproj", "{8A60EC44-756F-4E6C-925D-3F753C232660}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CCDA9171-EDFF-42DD-9AE8-391C76AE6497}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalIpRotator.Tests", "test\LocalIpRotator.Tests\LocalIpRotator.Tests.csproj", "{F86792D3-1783-41F9-9F66-EC17EE1B28B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A60EC44-756F-4E6C-925D-3F753C232660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A60EC44-756F-4E6C-925D-3F753C232660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A60EC44-756F-4E6C-925D-3F753C232660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A60EC44-756F-4E6C-925D-3F753C232660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86792D3-1783-41F9-9F66-EC17EE1B28B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86792D3-1783-41F9-9F66-EC17EE1B28B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86792D3-1783-41F9-9F66-EC17EE1B28B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86792D3-1783-41F9-9F66-EC17EE1B28B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A60EC44-756F-4E6C-925D-3F753C232660} = {254B1629-D037-4129-8EED-4D0F17DB5C7E}
+		{F86792D3-1783-41F9-9F66-EC17EE1B28B5} = {CCDA9171-EDFF-42DD-9AE8-391C76AE6497}
+	EndGlobalSection
+EndGlobal
