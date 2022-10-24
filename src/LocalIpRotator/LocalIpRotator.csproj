@@ -10,8 +10,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Description></Description>
-    <PackageTags>csharp, dotnet, vb-net, fsharp</PackageTags>
+    <Description>This lib allows you to make local ip rotations when doing a request in .NET, supports IPV4 or IPV6 blocks</Description>
+    <PackageTags>ip, http, rotator, bind, binder, socket, rotation, route, planner, routeplanner, csharp, dotnet, vb-net, fsharp</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
