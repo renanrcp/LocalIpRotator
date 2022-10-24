@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: weekly
+  labels:
+    - dependencies
+  assignees:
+    - "renanrcp"
+  reviewers:
+    - "renanrcp"
+  commit-message:
+    prefix: "chore"
