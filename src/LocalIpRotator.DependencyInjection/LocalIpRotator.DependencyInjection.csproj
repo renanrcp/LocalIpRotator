@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../LocalIpRotator.targets" />
+
+  <PropertyGroup>
+    <AssemblyName>LocalIpRotator.DependencyInjection</AssemblyName>
+    <RootNamespace>LocalIpRotator.DependencyInjection</RootNamespace>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Description>This lib allows you to make local ip rotations when doing a request in .NET, supports IPV4 or IPV6 blocks</Description>
+    <PackageTags>ipv4, ipv6, block, blocks, ipv6block, ipv4block, ip, http, rotator, bind, binder, socket, rotation, route, planner, routeplanner, csharp, dotnet, vb-net, fsharp</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="LocalIpRotator.DependencyInjection.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LocalIpRotator\LocalIpRotator.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

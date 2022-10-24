@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CCDA9171-E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalIpRotator.Tests", "test\LocalIpRotator.Tests\LocalIpRotator.Tests.csproj", "{F86792D3-1783-41F9-9F66-EC17EE1B28B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalIpRotator.DependencyInjection", "src\LocalIpRotator.DependencyInjection\LocalIpRotator.DependencyInjection.csproj", "{4F5C98D4-1DDD-49AD-A492-51A56727589A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalIpRotator.DependencyInjection.Tests", "test\LocalIpRotator.DependencyInjection.Tests\LocalIpRotator.DependencyInjection.Tests.csproj", "{4FA189B3-3A1E-4E51-9C89-7F003671171A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +32,19 @@ Global
 		{F86792D3-1783-41F9-9F66-EC17EE1B28B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F86792D3-1783-41F9-9F66-EC17EE1B28B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F86792D3-1783-41F9-9F66-EC17EE1B28B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F5C98D4-1DDD-49AD-A492-51A56727589A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5C98D4-1DDD-49AD-A492-51A56727589A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5C98D4-1DDD-49AD-A492-51A56727589A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5C98D4-1DDD-49AD-A492-51A56727589A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA189B3-3A1E-4E51-9C89-7F003671171A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA189B3-3A1E-4E51-9C89-7F003671171A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA189B3-3A1E-4E51-9C89-7F003671171A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA189B3-3A1E-4E51-9C89-7F003671171A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8A60EC44-756F-4E6C-925D-3F753C232660} = {254B1629-D037-4129-8EED-4D0F17DB5C7E}
 		{F86792D3-1783-41F9-9F66-EC17EE1B28B5} = {CCDA9171-EDFF-42DD-9AE8-391C76AE6497}
+		{4F5C98D4-1DDD-49AD-A492-51A56727589A} = {254B1629-D037-4129-8EED-4D0F17DB5C7E}
+		{4FA189B3-3A1E-4E51-9C89-7F003671171A} = {CCDA9171-EDFF-42DD-9AE8-391C76AE6497}
 	EndGlobalSection
 EndGlobal
