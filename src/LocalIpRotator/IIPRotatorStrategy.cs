@@ -8,7 +8,7 @@ namespace LocalIpRotator;
 /// <summary>
 /// Represents an IP Rotator strategy
 /// </summary>
-public interface IIPRotatorStrategy
+public interface IIPRotatorStrategy : IDnsProvider
 {
     /// <summary>
     /// The <see cref="IIPBlock" /> assigned to this strategy.
@@ -47,13 +47,4 @@ public interface IIPRotatorStrategy
     /// </summary>
     /// <returns>An <see cref="IPAddress" /> by this strategy.</returns>
     IPAddress GetIPAddress();
-
-    /// <summary>
-    /// Gets a Dns <see cref="IPHostEntry" /> for the specified <paramref name="dnsEndPoint" />.
-    /// </summary>
-    /// <param name="dnsEndPoint">The host address to get the Dns <see cref="IPHostEntry" />.</param>
-    /// <param name="cancellationToken">A cancellation token that can be used to signal the asynchronous operation should
-    /// be canceled.</param>
-    /// <returns>A Dns <see cref="IPHostEntry" /> for the specified <paramref name="dnsEndPoint" />.</returns>
-    public Task<IPHostEntry> GetDnsHostEntryAsync(DnsEndPoint dnsEndPoint, CancellationToken cancellationToken = default);
 }

@@ -10,6 +10,11 @@ namespace LocalIpRotator;
 /// </summary>
 public sealed class NativeSocketFactory : ISocketFactory
 {
+    private NativeSocketFactory()
+    {
+
+    }
+
     /// <summary>
     /// The default instance of the <see cref="NativeSocketFactory" />.
     /// </summary>
