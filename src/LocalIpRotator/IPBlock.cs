@@ -36,7 +36,7 @@ public class IPBlock : IIPBlock
     }
 
     /// <inheridoc />
-    public BigInteger Count => _ipAddresses.Count;
+    public BigInteger Count => _ipNetwork.Usable;
 
     /// <inheridoc />
     public IPAddress this[BigInteger index] => _ipAddresses[index];

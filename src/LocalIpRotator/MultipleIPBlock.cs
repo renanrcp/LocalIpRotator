@@ -95,7 +95,7 @@ public class MultipleIPBlock : IIPBlock
         {
             var blockIndex = 0;
 
-            while (index > 0)
+            while (index >= 0)
             {
                 if (_ipBlocks.Count <= blockIndex)
                 {
