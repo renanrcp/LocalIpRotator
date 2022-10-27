@@ -1,6 +1,7 @@
 // Licensed to the LocalIpRotator under one or more agreements.
 // LocalIpRotator licenses this file to you under the MIT license.
 
+using System.Collections;
 using System.Net;
 using System.Net.Sockets;
 using System.Numerics;
@@ -43,4 +44,15 @@ public class IPBlock : IIPBlock
 
     /// <inheridoc />
     public AddressFamily AddressFamily => _ipNetwork.AddressFamily;
+
+    /// <inheridoc />
+    public IEnumerator<IPAddress> GetEnumerator()
+    {
+        return _ipAddresses;
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return _ipAddresses;
+    }
 }

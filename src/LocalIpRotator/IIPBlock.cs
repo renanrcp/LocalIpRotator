@@ -1,6 +1,7 @@
 // Licensed to the LocalIpRotator under one or more agreements.
 // LocalIpRotator licenses this file to you under the MIT license.
 
+using System.Collections;
 using System.Net;
 using System.Net.Sockets;
 using System.Numerics;
@@ -10,7 +11,7 @@ namespace LocalIpRotator;
 /// <summary>
 /// Represents a block of IP addresses.
 /// </summary>
-public interface IIPBlock
+public interface IIPBlock : IEnumerable<IPAddress>, IEnumerable
 {
     /// <summary>
     /// Total number of IP addresses in this block.

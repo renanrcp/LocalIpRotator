@@ -1,6 +1,7 @@
 // Licensed to the LocalIpRotator under one or more agreements.
 // LocalIpRotator licenses this file to you under the MIT license.
 
+using System.Collections;
 using System.Net;
 using System.Net.Sockets;
 using System.Numerics;
@@ -122,4 +123,54 @@ public class MultipleIPBlock : IIPBlock
 
     /// <inheridoc />
     public AddressFamily AddressFamily { get; }
+
+    /// <inheridoc />
+    public IEnumerator<IPAddress> GetEnumerator()
+    {
+        return new Enumerator(this);
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return new Enumerator(this);
+    }
+
+    private struct Enumerator : IEnumerator<IPAddress>, IEnumerator
+    {
+        private readonly MultipleIPBlock _ipBlock;
+        private BigInteger _index;
+
+        public Enumerator(MultipleIPBlock ipBlock)
+        {
+            _ipBlock = ipBlock;
+            _index = -1;
+        }
+
+        public IPAddress Current => _ipBlock[_index];
+
+        object IEnumerator.Current => Current;
+
+        public bool MoveNext()
+        {
+            var index = _index + 1;
+
+            if (index >= _ipBlock.Count)
+            {
+                return false;
+            }
+
+            _index = index;
+
+            return true;
+        }
+
+        public void Reset()
+        {
+            _index = -1;
+        }
+
+        public void Dispose()
+        {
+        }
+    }
 }
