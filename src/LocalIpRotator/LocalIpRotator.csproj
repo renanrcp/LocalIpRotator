@@ -27,7 +27,7 @@
 
   <ItemGroup>
     <PackageReference Include="IPNetwork2" Version="2.6.472" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
   </ItemGroup>
 
   <Target Name="Husky" BeforeTargets="Restore;CollectPackageReferences" Condition="'$(HUSKY)' != 0 And !Exists('../../.husky/_')">
